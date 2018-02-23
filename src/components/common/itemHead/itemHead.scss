@@ -1,0 +1,17 @@
+@import '../../../style/base.scss';
+
+.itemHead{
+	padding-left: calculate(16);
+	margin-top: calculate(48);
+	margin-bottom: calculate(31);
+	line-height: calculate(34);
+	border-left: calculate(4) solid $red;
+	text-align: left;
+	.title{
+		display: inline-block;
+		font-size: calculate(31);
+	}
+	.iconfont{
+		font-size: calculate(28);
+	}
+}

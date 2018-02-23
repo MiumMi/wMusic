@@ -1,0 +1,73 @@
+@import '../../../style/base.scss';
+
+.playItem{
+	.img-wrapper{
+		position: relative;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		.icon{
+			position: absolute;
+			left: calculate(8);
+			top: calculate(8);
+			z-index: 15;
+			color: $white;
+			font-size: calculate(46);
+		}
+		// .icon-bg{
+		// 	position: absolute;
+		// 	left: calculate(8);
+		// 	top: calculate(8);
+		// 	z-index: 10;
+		// 	width: calculate(46);
+		// 	height: calculate(46);
+		// 	background: #000;
+		// 	opacity: 0.1;
+		// }
+		.listen{
+			position: absolute;
+			right: calculate(13);
+			top: calculate(8);
+			color: $white;
+			font-size: calculate(20);
+			.iconfont{
+				font-size: calculate(20);
+			}
+		}
+		.user{
+			position: absolute;
+			left: calculate(13);
+			bottom: calculate(17);
+			color: $white;
+			.icon-avatar{
+				font-size: calculate(26);
+			}
+			span{
+				font-size: calculate(22);
+			}
+			.icon-star{
+				font-size: calculate(24);
+				color: #f2a510;
+			}
+		}
+	}
+	.desc{
+		box-sizing: border-box;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		width: 100%;
+		padding-left: calculate(13);
+		overflow : hidden;
+		text-overflow: ellipsis;
+		line-height: calculate(40);
+		font-size: calculate(26);
+		text-align: left;
+	}
+	.singer{
+		padding-left: calculate(13);
+		color: $gray;
+		font-size: calculate(22);
+	}
+}

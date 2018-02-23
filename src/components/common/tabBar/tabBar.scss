@@ -1,0 +1,39 @@
+@import '../../../style/base.scss';
+
+.tabBar{
+  justify-content: space-between;
+  align-items: center;
+  padding: calculate(30) calculate(32);
+  background: $red;
+  .left{
+    position: relative;
+    width: calculate(75);
+    text-align: left;
+  }
+  .side-option{
+    color: $white;
+  }
+  .icon-option{
+    font-size: calculate(33);
+  }
+  .icon-search{
+    font-size: calculate(45);
+    font-weight: bold;
+    margin-left: calculate(40);
+  }
+  .tabs{
+    width: calculate(415);
+    display: flex;
+    justify-content: space-around;
+    i{
+      font-size: calculate(48);
+      color: $nofocus;
+      &.focus{
+        color: $white;
+      }
+    }
+    .icon-tuijian{
+      font-weight: bold;
+    }
+  }
+}

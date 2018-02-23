@@ -1,0 +1,86 @@
+@import '../../../style/base.scss';
+.home{		
+	.vux-swiper{
+		height: calculate(290);
+		.vux-swiper-item{
+			position: relative;
+			.banner-img{
+				width: 100%;
+				height: 100%;
+			}
+			.banner-desc{
+				position: absolute;
+				right: 0;
+				bottom: calculate(10);
+				padding: calculate(10) calculate(13) calculate(10) calculate(25);
+				font-size: calculate(20);
+				line-height: calculate(40);
+				border-top-left-radius: calculate(27);
+				border-bottom-left-radius: calculate(27);
+				color: $white;
+				background: $red;
+			}
+		}
+		
+	}
+	.home-dot{
+		.vux-icon-dot{
+			width: calculate(15);
+			height: calculate(15);
+			border-radius: 50%;
+			&.active{
+				background: $red !important;
+			}
+		}
+	}
+	.options{
+		justify-content: space-between;
+		padding: calculate(31) 0 calculate(36);
+		border: 1px solid $border;
+		.option-item{
+			flex: 33.33%;
+			text-align: center;
+			font-size: 0;
+		}
+		.option-icon{
+			display: block;
+			width: calculate(100);
+			height: calculate(100);
+			line-height: calculate(100);
+			text-align: center;
+			border: calculate(2) solid $red;
+			border-radius: 50%;
+			margin: 0 auto;
+			margin-bottom: calculate(18);
+			.iconfont{
+				font-size: calculate(60);
+				color: $red;
+			}
+			.icon-rili{
+				position: relative;
+				i{
+					position: absolute;
+					left: 50%;
+					top: calculate(-10);
+					transform: translateX(-50%);
+					font-size: calculate(18);
+					font-style: normal;
+				}
+			}
+		}
+		.option-desc{
+			font-size: calculate(23);
+			line-height: 1;
+		}
+	}
+	.wrapper-item{
+		.playItem{
+			width: 33%;
+			margin-right: 0.5%;
+			float: left;
+			&:nth-of-type(3n){
+				margin: 0;
+			}
+		}
+	}
+}
