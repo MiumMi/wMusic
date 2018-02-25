@@ -8,7 +8,7 @@
       <i class="iconfont icon-tuijian focus"></i>
       <i class="iconfont icon-usergroup"></i>
     </div>
-    <i class="iconfont icon-search side-option"></i>
+    <i class="iconfont icon-search side-option" @click="routerPush('search')"></i>
   </div>
 </template>
 

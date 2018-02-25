@@ -30,10 +30,10 @@
     </div>
     <!-- wrapper -->
     <div class="wrapper">
-      <div class="wrapper-item">
-        <item-head>推荐歌单</item-head>
+      <div class="wrapper-item" v-for="(listItem, key) in categoryList" :key="key+1">
+        <item-head :vip="listItem.title.includes('VIP') ? true : false"><i class="iconfont icon-vip y-title" v-if="listItem.title.includes('VIP')"></i><span>{{listItem.title}}</span></item-head>
         <div class="play-list clearfix">
-          <play-item v-for="(item, index) in playlist" :key="index+1" :item="item"></play-item>
+          <play-item v-for="(item, index) in listItem.playlist" :key="index+1" :item="item"></play-item>
         </div>
       </div>
     </div>
@@ -77,38 +77,135 @@ export default {
           desc: '新歌首发'
         }
       ],
-      playlist: [
+      categoryList: [
         {
-          src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
-          desc: '对你, 不只有" I Love You "',
-          listen: '16万',
-          userName: '打开房间地方',
-          vip: '1'
+          title: '推荐歌单',
+          playlist: [
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              listen: '16万',
+              userName: '打开房间地方',
+              vip: '1'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, ',
+              listen: '16万'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '只有" I Love You "',
+              listen: '16万'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              listen: '16万'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              listen: '16万'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              listen: '16万'
+            }
+          ]
         },
         {
-          src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
-          desc: '对你, ',
-          listen: '16万'
-        },        
-        {
-          src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
-          desc: '只有" I Love You "',
-          listen: '16万'
+          title: 'VIP专区',
+          playlist: [
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              listen: '16万',
+              userName: '打开房间地方',
+              vip: '1'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, ',
+              listen: '16万'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '只有" I Love You "',
+              listen: '16万'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              listen: '16万'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              listen: '16万'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              listen: '16万'
+            }
+          ]
         },
         {
-          src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
-          desc: '对你, 不只有" I Love You "',
-          listen: '16万'
+          title: '独家放送',
+          playlist: [
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              category: 'mv'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, ',
+              category: 'mv'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '只有" I Love You "',
+              category: 'mv'
+            }
+          ]
         },
         {
-          src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
-          desc: '对你, 不只有" I Love You "',
-          listen: '16万'
-        },
-        {
-          src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
-          desc: '对你, 不只有" I Love You "',
-          listen: '16万'
+          title: '最新音乐',
+          playlist: [
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              singer: 'test'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, ',
+              singer: 'test'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '只有" I Love You "',
+              singer: 'test'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              singer: 'test'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              singer: 'test'
+            },
+            {
+              src: 'http://p1.music.126.net/EnkfxTOuOoX1-aboycbSyQ==/109951163134383028.jpg?param=140y140',
+              desc: '对你, 不只有" I Love You "',
+              singer: 'test'
+            }
+          ]
         }
       ]
     }

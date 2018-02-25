@@ -1,6 +1,7 @@
 @import '../../../style/base.scss';
 
 .playItem{
+	margin-bottom: calculate(43);
 	.img-wrapper{
 		position: relative;
 		img{
@@ -66,8 +67,10 @@
 		text-align: left;
 	}
 	.singer{
+		display: block;
 		padding-left: calculate(13);
-		color: $gray;
 		font-size: calculate(22);
+		text-align: left;
+		color: $gray;
 	}
 }

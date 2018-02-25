@@ -1,0 +1,47 @@
+@import '../../../style/base.scss';
+
+.playBar{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	align-items: center;
+	padding: calculate(12) calculate(23) calculate(12) calculate(12);
+	background: $white;
+	.playBar-img{
+		width: calculate(78);
+		height: calculate(78);
+	}
+	.playBar-desc{
+		display: flex;
+		flex-direction: column;
+		margin-left: calculate(14);
+		text-align: left;
+		.music-name{
+			line-height: calculate(40);
+			font-size: calculate(25);
+		}
+		.music-singer{
+			line-height: calculate(40);
+			font-size: calculate(22);
+			color: $fontgray
+		}
+	}
+	.playBar-icon{
+		flex: 1;
+		text-align: right;
+		.playIcon{
+			display: inline-block;
+			.iconfont{
+				font-size: calculate(56);
+				color: #c4c3c1;
+			}
+		}
+		.icon-gedan{
+			margin-left: calculate(42);
+			font-size: calculate(50);
+			color: #333;
+		}
+	}
+}

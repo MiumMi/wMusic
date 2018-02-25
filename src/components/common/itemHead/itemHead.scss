@@ -10,8 +10,15 @@
 	.title{
 		display: inline-block;
 		font-size: calculate(31);
+		.icon-vip{
+			font-size: calculate(28);
+			margin-right: calculate(8);
+		}
 	}
 	.iconfont{
 		font-size: calculate(28);
+	}
+	.y-title{
+		color: #fc5a1c;
 	}
 }

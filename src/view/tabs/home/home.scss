@@ -1,5 +1,7 @@
 @import '../../../style/base.scss';
-.home{		
+.home{
+	padding-top: calculate(125);
+	padding-bottom: calculate(115);
 	.vux-swiper{
 		height: calculate(290);
 		.vux-swiper-item{

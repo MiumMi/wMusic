@@ -1,13 +1,14 @@
 <template>
   <div class="itemHead">
-    <div class="title"><slot></slot></div>
-    <i class="iconfont icon-right"></i>
+    <div :class="['title', {'y-title': vip}]"><slot></slot></div>
+    <i :class="['iconfont', 'icon-right', {'y-title': vip}]"></i>
   </div>
 </template>
 
 <script>
 export default {
   name: 'itemHead',
+  props: ['vip'],
   data () {
     return {}
   },
