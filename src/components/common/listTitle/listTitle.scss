@@ -1,0 +1,15 @@
+@import '../../../style/base.scss';
+
+.listTitle{
+	padding: calculate(34) calculate(16) calculate(34) calculate(16);
+	align-items: center;
+	.icon-fanhui{
+		font-size: calculate(40);
+		color: $white;
+		margin-right: calculate(37);
+	}
+	.title{
+		color: $white;
+		font-size: calculate(38);
+	}
+}

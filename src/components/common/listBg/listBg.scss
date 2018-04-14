@@ -1,0 +1,54 @@
+@import '../../../style/base.scss';
+.listBg{
+	position: relative;
+	box-sizing: border-box;
+	min-height: calculate(250);
+	padding-bottom: 0;
+	color: $white;
+	.list-desc{
+		position: relative;
+		box-sizing: border-box;
+		height: calculate(320);
+		padding: calculate(25) calculate(30);
+		z-index: 10;
+		padding-left: calculate(347);
+		text-align: left;
+	}
+	.list-creator{
+		margin-top: calculate(58);
+		img{
+			width: calculate(59);
+			height: calculate(59);
+			vertical-align: middle;
+			border-radius: 50%;
+		}
+		.icon-guanyanren{
+			font-size: calculate(59);
+		}
+		span{
+			vertical-align: middle;
+			font-size: calculate(22);
+		}
+		i{
+			vertical-align: middle;
+			font-size: calculate(20);
+		}
+	}
+	.list-option{
+		position: relative;
+		z-index: 10;
+		justify-content: space-around;
+		padding: calculate(10) 0 calculate(20);
+		background: #000;
+		opacity: 0.7;
+		color: $white;
+		.iconfont{
+			font-size: calculate(37);
+		}
+		.list-option-desc{
+			display: block;
+			margin-top: calculate(15);
+			font-size: calculate(22);
+		}
+	}
+}

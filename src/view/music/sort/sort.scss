@@ -1,0 +1,16 @@
+@import '../../../style/base.scss';
+.sort{
+	.listTitle{
+		background: $red;
+	}
+	.list-wrapper{
+		align-items: center;
+		padding-left: calculate(12);
+		margin-top: calculate(20);
+		.item-img{
+			width: calculate(96);
+			height: calculate(96);
+			margin-right: calculate(20);
+		}
+	}
+}

@@ -190,6 +190,42 @@ a{
   @return ($n/750)*18.75+rem;
 }
 
+.pd-bottom{
+  padding-bottom: calculate(115);
+}
+.option-item{
+  align-items: center;
+  .iconfont{
+    width: calculate(105);
+    text-align: center;
+    font-size: calculate(42);
+    color: #d33a32;
+  }
+  .option-desc{
+    flex: 1;
+    height: calculate(103);
+    line-height: calculate(103);
+    border-bottom: 1px solid #e6e7e9;
+    text-align: left;
+    color: #333;
+    font-size: calculate(29);
+    i{
+      font-style: normal;
+      color: #a5a6a8;
+    }
+  }
+}
+.weui-toast{
+  min-height: 0 !important;
+  padding: 0 0 calculate(10);
+}
+.err{
+  display: block;
+  margin-bottom: calculate(10);
+  font-size: calculate(30);
+  color: #d33a32;
+  text-align: center;
+}
 /*color*/
 $white: #FFF;
 $black: #000;

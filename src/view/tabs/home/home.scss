@@ -1,7 +1,6 @@
 @import '../../../style/base.scss';
 .home{
 	padding-top: calculate(125);
-	padding-bottom: calculate(115);
 	.vux-swiper{
 		height: calculate(290);
 		.vux-swiper-item{
@@ -35,16 +34,16 @@
 			}
 		}
 	}
-	.options{
+	.recommend{
 		justify-content: space-between;
 		padding: calculate(31) 0 calculate(36);
 		border: 1px solid $border;
-		.option-item{
+		.recommend-item{
 			flex: 33.33%;
 			text-align: center;
 			font-size: 0;
 		}
-		.option-icon{
+		.recommend-icon{
 			display: block;
 			width: calculate(100);
 			height: calculate(100);
@@ -70,7 +69,7 @@
 				}
 			}
 		}
-		.option-desc{
+		.recommend-desc{
 			font-size: calculate(23);
 			line-height: 1;
 		}

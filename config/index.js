@@ -40,7 +40,15 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
 
-    cssSourceMap: true
+    cssSourceMap: true,
+    proxyTable: {
+        '/music': {
+          target: 'http://localhost:3000', //测试环境转发
+          // target: 'http://172.16.11.119:8080', // 波哥环境
+          // target: 'http://183.6.105.160:58080', // 胡颖电脑
+          changeOrigin: true
+        }
+    },
   },
 
   build: {

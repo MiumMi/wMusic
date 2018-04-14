@@ -1,0 +1,32 @@
+@import '../../../style/base.scss';
+.allList{
+	.listTitle{
+		background: $red;
+	}
+	.category{
+		box-sizing: border-box;
+		padding: calculate(30) calculate(30) calculate(10);
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.item{
+			margin-bottom: calculate(20);
+			margin-right: calculate(30);
+			padding: calculate(3) calculate(15);
+			border: 1px solid #a29b9b;
+			border-radius: calculate(30);
+			font-size: calculate(30);
+		}
+	}
+	.list-wrapper{
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.playItem{
+			width: 49%;
+		}
+	}
+	.nodata{
+		margin-top: calculate(100);
+		color: #666;
+		font-size: calculate(40);
+	}
+}

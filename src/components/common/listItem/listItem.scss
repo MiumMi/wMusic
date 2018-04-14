@@ -1,0 +1,36 @@
+@import '../../../style/base.scss';
+.listItem{
+	position: relative;
+	box-sizing: border-box;
+	flex: 1;
+	padding: calculate(27) calculate(96) calculate(23) 0;
+	border-bottom: 1px solid #ecedef;
+	text-align: left;
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	.music-name, .music-singer{
+		display: block;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+	}
+	.music-name{
+		height: calculate(27);
+		font-size: calculate(27);
+	}
+	.music-singer{
+		height: calculate(18);
+		margin-top: calculate(21);
+		font-size: calculate(18);
+	}
+	.icon-icon{
+		position: absolute;
+		right: calculate(46);
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: calculate(27);
+		color: #151716;
+	}
+}

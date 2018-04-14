@@ -1,0 +1,50 @@
+@import '../../../style/base.scss';
+.myComments{
+	.listTitle{
+		background: $red;
+	}
+	.list-info{
+		box-sizing: border-box;
+		align-items: center;
+		padding: calculate(20) calculate(30);
+		background: $white;
+		border-bottom: 1px solid #efefef;
+		.list-detail{
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			text-align: left;
+		}
+		.name{
+			font-size: calculate(32);
+			line-height: calculate(40);
+		}
+		.content{
+			width: 100%;
+			overflow: hidden;
+			margin-top: calculate(10);
+			font-size: calculate(30);
+		}
+		.btn{
+			width: calculate(150);
+			margin-left: calculate(20);
+			line-height: calculate(60);
+			background: $red;
+			color: $white;
+			border: none;
+			outline: none;
+			font-size: calculate(28);
+		}
+	}
+	.list-img{
+		width: calculate(120);
+		height: calculate(120);
+		border-radius: 50%;
+		margin-right: calculate(20);
+	}
+	.nodata{
+		font-size: calculate(40);
+		color: #666;
+		margin-top: calculate(200);
+	}
+}

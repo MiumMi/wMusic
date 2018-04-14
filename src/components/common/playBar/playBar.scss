@@ -15,6 +15,7 @@
 	}
 	.playBar-desc{
 		display: flex;
+		flex: 1;
 		flex-direction: column;
 		margin-left: calculate(14);
 		text-align: left;
@@ -29,7 +30,8 @@
 		}
 	}
 	.playBar-icon{
-		flex: 1;
+		width: calculate(160);
+		overflow: hidden;
 		text-align: right;
 		.playIcon{
 			display: inline-block;

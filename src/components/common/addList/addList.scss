@@ -1,0 +1,79 @@
+@import '../../../style/base.scss';
+
+.addList{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1900;
+	height: 100%;
+	.addList-bg{
+		width: 100%;
+		height: 100%;
+		background: #000;
+		opacity: .8;
+		z-index: 1900;
+	}
+	.addList-wrapper{
+		position: absolute;
+		left: calculate(30);
+		top: 50%;
+		z-index: 2000;
+		transform: translateY(-50%);
+		box-sizing: border-box;
+		width: calculate(690);
+		padding: calculate(20) calculate(30);
+		border-radius: calculate(10);
+		background: $white;
+		color: #333;
+		text-align: left;
+	}
+	.input-item{
+		flex-direction: row;
+		align-items: center;
+		padding: calculate(20);
+		font-size: calculate(30);
+		.desc{
+			width: calculate(300);
+		}
+		.input-desc{
+			width: calculate(160);
+		}
+		.item-detail{
+			flex: 1;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		input{
+			box-sizing: border-box;
+			padding: calculate(10) calculate(5);
+			border-bottom: 1px solid #ccc;
+		}
+		.item{
+			margin-bottom: calculate(20);
+			margin-right: calculate(30);
+			padding: calculate(3) calculate(15);
+			border: 1px solid #a29b9b;
+			border-radius: calculate(30);
+			font-size: calculate(30);
+		}
+		.item-selected{
+			color: $red;
+			border: 1px solid $red;
+		}
+	}
+	.addBtn{
+		display: block;
+		width: calculate(220);
+		margin: calculate(20) auto;
+		line-height: calculate(60);
+		border: none;
+		border-radius: calculate(10);
+		background: $red;
+		color: $white;
+		outline: none;
+		font-size: calculate(30);
+	}
+}

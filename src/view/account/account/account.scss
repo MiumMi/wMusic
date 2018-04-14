@@ -1,0 +1,54 @@
+@import '../../../style/base.scss';
+.account{
+	.listTitle{
+		margin-bottom: calculate(45);
+		background: #d33a32;
+		opacity: .7;
+	}
+	.input-wrapper{
+		width: calculate(671);
+		margin: 0 auto;
+		margin-top: calculate(75);
+		padding-bottom: calculate(15);
+		border-bottom: 1px solid #d3d5d4;
+		text-align: left;
+		.iconfont{
+			margin-right: calculate(18);
+			font-size: calculate(40);
+		}
+		input{
+			width: calculate(484);
+			outline: none;
+			background: transparent;
+			font-size: calculate(29);
+			&::-webkit-input-placeholder {
+				color: #bfc0c2;
+			}
+			&:-moz-placeholder {
+				color: #bfc0c2;
+			}
+			&::-moz-placeholder {
+				color: #bfc0c2;
+			}
+			&:-ms-input-placeholder {
+				color: #bfc0c2;
+			}
+		}
+		.forget{
+			font-size: calculate(22);
+			color: #547eac;
+		}
+	}
+	.btn{
+		width: calculate(671);
+		line-height: calculate(86);
+		margin: 0 auto;
+		margin-top: calculate(64);
+		border: none;
+		border-radius: calculate(40);
+		color: $white;
+		background: #d33a32;
+		font-size: calculate(30);
+		outline: none;
+	}
+}

@@ -1,0 +1,20 @@
+@import '../../../style/base.scss';
+.recommend{
+	.listTitle{
+		background: $red;
+	}
+	.bg-img{
+		width: 100%;
+		height: calculate(300);
+	}
+	.list-wrapper{
+		align-items: center;
+		padding-left: calculate(12);
+		margin-top: calculate(20);
+		.item-img{
+			width: calculate(96);
+			height: calculate(96);
+			margin-right: calculate(20);
+		}
+	}
+}

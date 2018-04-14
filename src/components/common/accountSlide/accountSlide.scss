@@ -1,0 +1,92 @@
+@import '../../../style/base.scss';
+
+.accountSlide{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  height: 100%;
+  .account-bg{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 500;
+  }
+  .account-wrapper{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 600;
+    width: calculate(616);
+    height: 100%;
+    background: $white;
+  }
+  .account-detail{
+    position: relative;
+    height: calculate(320);
+    background: rgba(134, 141, 151, .8);
+    .avatar, .icon-guanyanren{
+      position: absolute;
+      left: calculate(30);
+      bottom: calculate(101);
+      width: calculate(135);
+      height: calculate(135);
+      border-radius: 50%;
+      font-size: calculate(135);
+      color: $white;
+    }
+    .username{
+      position: absolute;
+      left: calculate(30);
+      bottom: calculate(40);
+      font-size: calculate(25);
+      color: $white;
+    }
+    .input-loc-img{
+      position: absolute;
+      left: calculate(30);
+      bottom: calculate(101);
+      width: calculate(135);
+      height: calculate(135);
+      overflow: hidden;
+      outline: none;
+      color: transparent;
+      font-size: 0;
+      z-index: 10;
+      border: 0;
+      opacity: 0;
+    }
+  }
+  .user-options{
+    .item{
+      box-sizing: border-box;
+      height: calculate(86);
+      line-height: calculate(86);
+      padding-left: calculate(25);
+      text-align: left;
+      font-size: calculate(30);
+      .iconfont{
+        margin-right: calculate(21);
+        font-size: calculate(29);
+      }
+    }
+  }
+  .operation{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 calculate(30);
+    line-height: calculate(96);
+    border-top: 1px solid #e6e6e6;
+    font-size: calculate(30);
+    .iconfont{
+      margin-right: calculate(21);
+      font-size: calculate(33);
+    }
+  }
+}

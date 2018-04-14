@@ -1,0 +1,104 @@
+@import '../../../style/base.scss';
+.comments{
+	.listTitle{
+		background: $red;
+	}
+	.list-info{
+		box-sizing: border-box;
+		padding: calculate(20) calculate(30);
+		background: $white;
+		.list-detail{
+			flex: 1;
+			text-align: left;
+		}
+		.name{
+			font-size: calculate(36);
+			line-height: calculate(46);
+		}
+		.creator{
+			margin-top: calculate(10);
+			font-size: calculate(30);
+		}
+	}
+	.list-img{
+		width: calculate(200);
+		height: calculate(200);
+		margin-right: calculate(20);
+	}
+	.input-wrapper{
+		position: relative;
+		box-sizing: border-box;
+		margin-top: calculate(20);
+		padding: calculate(20) calculate(20);
+		padding-right: calculate(190);
+		background: $white;
+		.btn{
+			position: absolute;
+			right: calculate(20);
+			top: 50%;
+			transform: translateY(-50%);
+			width: calculate(150);
+			line-height: calculate(60);
+			font-size: calculate(30);
+			background: $red;
+			color: $white;
+			border: none;
+			border-radius: calculate(10);
+		}
+	}
+	.text-area{
+		box-sizing: border-box;
+		width: 100%;
+		border-bottom: 1px solid #efefef;
+		outline: none;
+		padding: calculate(10);
+		font-size: calculate(30);
+	}
+	.comments-wrapper{
+		margin-top: calculate(20);
+		background: #efefef;
+		color: #666;
+		.title{
+			line-height: calculate(60);
+			font-size: calculate(30);
+		}
+		.comments-item{
+			box-sizing: border-box;
+			padding: calculate(10) calculate(30);
+		}
+		.icon-guanyanren, .avatar{
+			width: calculate(80);
+			height: calculate(80);
+			border-radius: 50%;
+			font-size: calculate(80);
+			margin-right: calculate(10);
+		}
+		.comments-detail{
+			width: 100%;
+			text-align: left;
+			border-bottom: 1px solid #bdb7b7;
+			.creator{
+				display: block;
+				font-size: calculate(30);
+			}
+			.creattime{
+				font-size: calculate(24);
+				color: #999;
+			}
+			p{
+				margin-top: calculate(20);
+				margin-bottom: calculate(10);
+				font-size: calculate(30);
+				line-height: calculate(40);
+			}
+		}
+		.comments-item:last-of-type .comments-detail{
+			border: none;
+		}
+	}
+	.nodata{
+		font-size: calculate(40);
+		color: #666;
+		margin-top: calculate(200);
+	}
+}

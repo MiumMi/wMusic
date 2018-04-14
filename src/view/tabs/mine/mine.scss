@@ -1,0 +1,34 @@
+@import '../../../style/base.scss';
+.mine{
+	padding-top: calculate(125);
+	.mine-option{
+		background: #f3f4f6;
+	}
+	.music-list{
+		.music-list-title{
+			box-sizing: border-box;
+			padding: 0 calculate(30);
+			line-height: calculate(65);
+			background: #e7e9e8;
+			text-align: left;
+			font-size: calculate(23);
+			color: #595b5a;
+			.iconfont-wrapper{
+				display: inline-block;
+				margin-right: calculate(25);
+			}
+		}
+	}
+	.list-wrapper{
+		align-items: center;
+		padding-left: calculate(12);
+		.item-img{
+			box-sizing: border-box;
+			width: calculate(96);
+			height: calculate(106);
+			padding: calculate(10) 0;
+			margin-right: calculate(20);
+			border: none;
+		}
+	}
+}

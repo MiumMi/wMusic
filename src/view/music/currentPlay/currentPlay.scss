@@ -1,0 +1,115 @@
+@import '../../../style/base.scss';
+.currentPlay {
+	height: 100%;
+	.listTitle{
+		background: #0d1e3c;
+		color: $white;
+	}
+	.title-detail{
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		.music-name{
+			font-size: calculate(34);
+		}
+		.music-singer{
+			margin-top: calculate(15);
+			font-size: calculate(26);
+			color: #687284;
+		}
+	}
+	.content{
+		position: relative;
+		width: 100%;
+		height: 88.5%;
+		background: radial-gradient(closest-side circle at 50% 25%,#fff 5%, #0d2040 80%);
+	}
+	.img-wrapper{
+		position: absolute;
+		left: 50%;
+		top: 25%;
+		transform: translateX(-50%) translateY(-50%);
+		width: calculate(350);
+		height: calculate(350);
+		.img{
+			width: calculate(350);
+			height: calculate(350);
+			border-radius: 50%;
+			transition: all 1s linear;
+		}
+	}
+	.lyric{
+		position: absolute;
+		left: 0;
+		top: 47%;
+		box-sizing: border-box;
+		width: 100%;
+		height: calculate(380);
+		overflow-y: scroll;
+		padding: calculate(10) calculate(30);
+		font-size: calculate(34);
+		color: $white;
+		.lyric-wrapper{
+			transition: all .15s
+		}
+		.lyric-text{
+			display: block;
+			line-height: calculate(50);
+			margin-bottom: calculate(30);
+			opacity: .5
+		}
+		.focus-lyric{
+			opacity: 1
+		}
+	}
+	.bottom{
+		position: absolute;
+		left: 0;
+		bottom: calculate(50);
+		flex-direction: column;
+		color: $white;
+	}
+	.time, .music-options{
+		align-items: center;
+		justify-content: center;
+	}
+	.time{
+		margin-bottom: calculate(48);
+		font-size: calculate(20);
+		color: $white;
+		.progress{
+			position: relative;
+			width: calculate(550);
+			height: calculate(5);
+			border-radius: calculate(2);
+			background: #5c697c;
+			.now{
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 20;
+				height: calculate(5);
+				background: #d43a32;
+			}
+		}
+		.time-left{
+			margin-right: calculate(10);
+		}
+		.time-right{
+			margin-left: calculate(10);
+		}
+	}
+	.music-options{
+		.iconfont{
+			margin-left: calculate(50);
+			font-size: calculate(40);
+			&:first-of-type{
+				margin: 0;
+			}
+		}
+		.icon-bofang,.icon-zanting{
+			font-weight: bold;
+			font-size: calculate(42);
+		}
+	}
+}

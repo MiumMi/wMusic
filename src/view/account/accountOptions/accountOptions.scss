@@ -1,0 +1,26 @@
+@import '../../../style/base.scss';
+.app-page{
+	height: 100%;
+}
+.accountOption{
+	padding-top: calculate(561);
+	background: linear-gradient(to bottom, #e04c4c, white 40%);
+	height: 100%;
+	.btn{
+		width: calculate(671);
+		line-height: calculate(86);
+		margin: 0 auto;
+		margin-top: calculate(64);
+		border: 1px solid #d33a32;
+		border-radius: calculate(40);
+		background: transparent;
+		color: #d33a32;
+		font-size: calculate(30);
+		outline: none;
+	}
+	p{
+		margin-top: calculate(60);
+		font-size: calculate(30);
+		color: #575757;
+	}
+}

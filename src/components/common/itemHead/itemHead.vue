@@ -1,7 +1,7 @@
 <template>
   <div class="itemHead">
-    <div :class="['title', {'y-title': vip}]"><slot></slot></div>
-    <i :class="['iconfont', 'icon-right', {'y-title': vip}]"></i>
+    <div :class="['title', {'y-title': vip}]" @click="onClick"><slot></slot></div>
+    <i :class="['iconfont', 'icon-right', {'y-title': vip}]" @click="onClick"></i>
   </div>
 </template>
 
@@ -12,7 +12,11 @@ export default {
   data () {
     return {}
   },
-  methods: {}
+  methods: {
+    onClick () {
+      this.$emit('click')
+    }
+  }
 }
 </script>
 
